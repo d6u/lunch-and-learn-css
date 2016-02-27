@@ -178,8 +178,47 @@ _Side note: [PostCSS](https://github.com/postcss/postcss) is a great CSS transfo
 
 Take flexbox further
 
-- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [The future of layout with CSS: Grid Layouts](https://hacks.mozilla.org/2015/09/the-future-of-layout-with-css-grid-layouts/)
 - [Can I use grid](http://caniuse.com/#search=grid) - Short answer "Not yet"
+- [Enable Grid layout in chrome](chrome://flags/#enable-experimental-web-platform-features)
+
+```css
+.container {
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 100px auto;
+  grid-template-areas:
+    "header  header"
+    "sidebar content"
+    "footer  footer";
+}
+
+/* More creative use of grid-template-areas */
+.container-2 {
+  display: grid;
+  grid-template-rows: repeat(5, 100px);
+  grid-template-columns: repeat(5, 100px);
+  grid-template-areas:
+    ". . . . ."
+    ". . . . ."
+    ". . a . ."
+    ". . . . ."
+    ". . . . .";
+}
+
+.cell {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.cell {
+  grid-area: header; /* defined in grid-template-areas */
+}
+```
+
+[Example](http://codepen.io/daiweilu/pen/EKxoxz?editors=1100)
 
 ## Start variable names with `--` is not my fault
 

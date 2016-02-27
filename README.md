@@ -180,7 +180,7 @@ Take flexbox further
 
 - [The future of layout with CSS: Grid Layouts](https://hacks.mozilla.org/2015/09/the-future-of-layout-with-css-grid-layouts/)
 - [Can I use grid](http://caniuse.com/#search=grid) - Short answer "Not yet"
-- [Enable Grid layout in chrome](chrome://flags/#enable-experimental-web-platform-features)
+- Enable Grid layout in chrome - chrome://flags/#enable-experimental-web-platform-features
 
 ```css
 .container {

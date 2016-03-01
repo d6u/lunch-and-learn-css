@@ -1,7 +1,5 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+  <h1 class="slide__header">Let's Talk about CSS</h1>
 </template>
 
 <script>
@@ -12,8 +10,13 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-      msg: 'Hello World!'
-    }
+      msg: 'Slide 1'
+    };
   }
-}
+};
 </script>
+
+<style lang="scss" scoped>
+.slide--slide-1 {
+}
+</style>

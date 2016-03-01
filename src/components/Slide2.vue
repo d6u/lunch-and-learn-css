@@ -1,12 +1,9 @@
 <template>
-  <div>
-    <img class="slide2__center-img" src="http://www.dailyblogtips.com/wp-content/uploads/html-css-tshirt.jpg" alt="" />
-  </div>
+  <img class="slide2__center-img" src="http://www.dailyblogtips.com/wp-content/uploads/html-css-tshirt.jpg" alt="" />
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

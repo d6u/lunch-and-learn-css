@@ -1,22 +1,68 @@
 <template>
-  <div class="slide" v-bind:style="{transform: transform}">
-    {{currentSlide}}
+  <div class="slide" v-show="show" transition="switch-slides">
     <slot>
   </div>
 </template>
 
 <script>
+import Vue from 'vue';
+
 export default {
-  data () {
-    return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      transform: `translateX(100vw)`
-    };
+  props: {
+    prev: {
+      type: Number,
+      required: true
+    },
+    current: {
+      type: Number,
+      required: true
+    },
+    index: {
+      type: Number,
+      required: true
+    }
+  },
+  computed: {
+    show() {
+      return this.current === this.index;
+    }
   }
 };
+
+Vue.transition('switch-slides', {
+  css: false,
+  enter(el, done) {
+    el.style.opacity = '0';
+    if (this.prev < this.current) {
+      el.style.transform = `translateX(${10}vw)`;
+    } else {
+      el.style.transform = `translateX(${-10}vw)`;
+    }
+    requestAnimationFrame(() => {
+      el.style.opacity = '1';
+      el.style.transform = `translateX(0)`;
+    });
+    el.addEventListener('transitionend', function transitionend() {
+      el.removeEventListener('transitionend', transitionend);
+      done();
+    });
+  },
+  leave(el, done) {
+    el.style.opacity = '1';
+    if (this.prev < this.current) {
+      el.style.transform = `translateX(${-10}vw)`;
+    } else {
+      el.style.transform = `translateX(${10}vw)`;
+    }
+    requestAnimationFrame(() => {
+      el.style.opacity = '0';
+    });
+    el.addEventListener('transitionend', function transitionend() {
+      el.removeEventListener('transitionend', transitionend);
+      done();
+    });
+  }
+});
 </script>
 
 <style lang="scss">
@@ -30,6 +76,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+  transition: opacity 200ms ease, transform 200ms ease;
 }
 
 .slide__header {
@@ -39,5 +86,4 @@ export default {
   text-align: center;
   font-size: 10rem;
 }
-
 </style>

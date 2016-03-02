@@ -8,6 +8,7 @@
     "test": "karma start build/karma.conf.js --single-run"
   },
   "dependencies": {
+    "highlight.js": "^9.2.0",
     "vue": "^1.0.16"
   },
   "devDependencies": {

@@ -3,6 +3,7 @@
     <slide :prev="prev" :current="current" :index="0"><slide1></slide1></slide>
     <slide :prev="prev" :current="current" :index="1"><slide2></slide2></slide>
     <slide :prev="prev" :current="current" :index="2"><slide3></slide3></slide>
+    <slide :prev="prev" :current="current" :index="3"><slide4></slide4></slide>
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import Slide from './components/Slide';
 import Slide1 from './components/Slide1';
 import Slide2 from './components/Slide2';
 import Slide3 from './components/Slide3';
+import Slide4 from './components/Slide4';
 
 export default {
   data() {
@@ -36,7 +38,8 @@ export default {
     Slide,
     Slide1,
     Slide2,
-    Slide3
+    Slide3,
+    Slide4
   }
 };
 </script>
@@ -66,6 +69,10 @@ blockquote {
     text-align: right;
     font-size: 3.5rem;
   }
+}
+
+pre {
+  font-size: 3rem;
 }
 
 .app {

@@ -67,7 +67,7 @@ Vue.transition('switch-slides', {
 
 <style lang="scss">
 .slide {
-  --border-color: #5B2C6F;
+  --border-color: #0097A7;
   --background-color: #FEF5E7;
   height: 100vh;
   width: 100vw;

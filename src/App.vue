@@ -4,6 +4,7 @@
     <slide :prev="prev" :current="current" :index="1"><slide2></slide2></slide>
     <slide :prev="prev" :current="current" :index="2"><slide3></slide3></slide>
     <slide :prev="prev" :current="current" :index="3"><slide4></slide4></slide>
+    <slide :prev="prev" :current="current" :index="4"><slide5></slide5></slide>
   </div>
 </template>
 

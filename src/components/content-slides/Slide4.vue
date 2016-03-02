@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .center {
   width: 500px;
   margin: 40px auto 0;

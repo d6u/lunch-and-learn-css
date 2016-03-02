@@ -83,7 +83,7 @@ Vue.transition('switch-slides', {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  font-size: 10rem;
+  font-size: 9rem;
 }
 
 .slide__title {

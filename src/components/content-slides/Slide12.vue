@@ -6,7 +6,7 @@
   text-align: center;
   white-space: nowrap;
 }
-.parent::before { /* Very cool ::before usage */
+.parent::before { /* Very cool usage of ::before */
   content: '';
   display: inline-block;
   height: 100%;
@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .smaller-code-block {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .side-by-side-wrapper {
@@ -47,11 +47,11 @@ export default {
 }
 
 .left {
-  width: 650px;
+  width: 500px;
 }
 
 .right {
-  width: 1200px - 650px;
+  width: 944px - 500px;
   position: absolute;
   right: 0;
   top: 0;

@@ -12,6 +12,10 @@
     <slide :prev="prev" :current="current" :index="9"><slide10></slide10></slide>
     <slide :prev="prev" :current="current" :index="10"><slide11></slide11></slide>
     <slide :prev="prev" :current="current" :index="11"><slide12></slide12></slide>
+    <slide :prev="prev" :current="current" :index="12"><slide13></slide13></slide>
+    <slide :prev="prev" :current="current" :index="13"><slide14></slide14></slide>
+    <slide :prev="prev" :current="current" :index="14"><slide15></slide15></slide>
+    <slide :prev="prev" :current="current" :index="15"><slide16></slide16></slide>
   </div>
 </template>
 
@@ -29,7 +33,10 @@ import Slide9 from './components/content-slides/Slide9';
 import Slide10 from './components/content-slides/Slide10';
 import Slide11 from './components/content-slides/Slide11';
 import Slide12 from './components/content-slides/Slide12';
-// import Slide7 from './components/content-slides/Slide7';
+import Slide13 from './components/content-slides/Slide13';
+import Slide14 from './components/content-slides/Slide14';
+import Slide15 from './components/content-slides/Slide15';
+import Slide16 from './components/content-slides/Slide16';
 
 export default {
   data() {
@@ -65,6 +72,10 @@ export default {
     Slide10,
     Slide11,
     Slide12,
+    Slide13,
+    Slide14,
+    Slide15,
+    Slide16,
   }
 };
 </script>
@@ -84,12 +95,13 @@ html {
 body {
   font-family: 'Playfair Display', serif;
   background-color: #FEF5E7;
+  font-size: 2rem;
 }
 
 blockquote {
   font-size: 3rem;
   width: 80rem;
-  margin: 15rem auto 0;
+  margin: 10rem auto 0;
   color: #757575;
   p:last-child {
     text-align: right;
@@ -98,7 +110,7 @@ blockquote {
 }
 
 pre {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .app {

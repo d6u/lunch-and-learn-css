@@ -24,14 +24,14 @@ export default {
 <style lang="scss" scoped>
 .parent {
   width: 400px;
-  height: 300px;
+  height: 250px;
   background-color: #0097A7;
   margin: 0 auto;
   text-align: center;
 }
 .center {
   height: 100px;
-  background-color: red;
+  background-color: #35495E;
   display: inline-block;
   animation: 1000ms ease-in infinite horizontal-expand;
 }

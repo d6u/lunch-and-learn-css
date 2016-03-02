@@ -98,7 +98,7 @@ blockquote {
 }
 
 pre {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .app {

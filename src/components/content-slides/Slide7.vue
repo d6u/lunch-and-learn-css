@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 .parent {
   width: 400px;
-  height: 300px;
+  height: 250px;
   background-color: #0097A7;
   margin: 0 auto;
 }
@@ -32,6 +32,6 @@ export default {
   height: 100px;
   margin-left: auto;
   margin-right: auto;
-  background-color: red;
+  background-color: #35495E;
 }
 </style>

@@ -9,10 +9,11 @@
 
 <script>
 import Slide from './components/Slide';
-import Slide1 from './components/Slide1';
-import Slide2 from './components/Slide2';
-import Slide3 from './components/Slide3';
-import Slide4 from './components/Slide4';
+import Slide1 from './components/content-slides/Slide1';
+import Slide2 from './components/content-slides/Slide2';
+import Slide3 from './components/content-slides/Slide3';
+import Slide4 from './components/content-slides/Slide4';
+import Slide5 from './components/content-slides/Slide5';
 
 export default {
   data() {
@@ -39,7 +40,8 @@ export default {
     Slide1,
     Slide2,
     Slide3,
-    Slide4
+    Slide4,
+    Slide5,
   }
 };
 </script>
@@ -58,6 +60,7 @@ html {
 
 body {
   font-family: 'Playfair Display', serif;
+  background-color: #FEF5E7;
 }
 
 blockquote {

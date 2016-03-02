@@ -62,6 +62,10 @@ blockquote {
   width: 80rem;
   margin: 15rem auto 0;
   color: #757575;
+  p:last-child {
+    text-align: right;
+    font-size: 3.5rem;
+  }
 }
 
 .app {

@@ -7,6 +7,11 @@
     <slide :prev="prev" :current="current" :index="4"><slide5></slide5></slide>
     <slide :prev="prev" :current="current" :index="5"><slide6></slide6></slide>
     <slide :prev="prev" :current="current" :index="6"><slide7></slide7></slide>
+    <slide :prev="prev" :current="current" :index="7"><slide8></slide8></slide>
+    <slide :prev="prev" :current="current" :index="8"><slide9></slide9></slide>
+    <slide :prev="prev" :current="current" :index="9"><slide10></slide10></slide>
+    <slide :prev="prev" :current="current" :index="10"><slide11></slide11></slide>
+    <slide :prev="prev" :current="current" :index="11"><slide12></slide12></slide>
   </div>
 </template>
 
@@ -19,6 +24,12 @@ import Slide4 from './components/content-slides/Slide4';
 import Slide5 from './components/content-slides/Slide5';
 import Slide6 from './components/content-slides/Slide6';
 import Slide7 from './components/content-slides/Slide7';
+import Slide8 from './components/content-slides/Slide8';
+import Slide9 from './components/content-slides/Slide9';
+import Slide10 from './components/content-slides/Slide10';
+import Slide11 from './components/content-slides/Slide11';
+import Slide12 from './components/content-slides/Slide12';
+// import Slide7 from './components/content-slides/Slide7';
 
 export default {
   data() {
@@ -49,6 +60,11 @@ export default {
     Slide5,
     Slide6,
     Slide7,
+    Slide8,
+    Slide9,
+    Slide10,
+    Slide11,
+    Slide12,
   }
 };
 </script>
@@ -82,7 +98,7 @@ blockquote {
 }
 
 pre {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .app {

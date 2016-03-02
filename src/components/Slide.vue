@@ -72,6 +72,7 @@ Vue.transition('switch-slides', {
   height: 100vh;
   width: 100vw;
   border: 20px solid var(--border-color);
+  padding: 20px;
   background-color: var(--background-color);
   position: absolute;
   top: 0;

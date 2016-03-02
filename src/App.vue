@@ -2,6 +2,7 @@
   <div class="app">
     <slide :prev="prev" :current="current" :index="0"><slide1></slide1></slide>
     <slide :prev="prev" :current="current" :index="1"><slide2></slide2></slide>
+    <slide :prev="prev" :current="current" :index="2"><slide3></slide3></slide>
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 import Slide from './components/Slide';
 import Slide1 from './components/Slide1';
 import Slide2 from './components/Slide2';
+import Slide3 from './components/Slide3';
 
 export default {
   data() {
@@ -33,7 +35,8 @@ export default {
   components: {
     Slide,
     Slide1,
-    Slide2
+    Slide2,
+    Slide3
   }
 };
 </script>
@@ -52,6 +55,13 @@ html {
 
 body {
   font-family: 'Playfair Display', serif;
+}
+
+blockquote {
+  font-size: 3rem;
+  width: 80rem;
+  margin: 15rem auto 0;
+  color: #757575;
 }
 
 .app {

@@ -5,6 +5,7 @@
     <slide :prev="prev" :current="current" :index="2"><slide3></slide3></slide>
     <slide :prev="prev" :current="current" :index="3"><slide4></slide4></slide>
     <slide :prev="prev" :current="current" :index="4"><slide5></slide5></slide>
+    <slide :prev="prev" :current="current" :index="5"><slide6></slide6></slide>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Slide2 from './components/content-slides/Slide2';
 import Slide3 from './components/content-slides/Slide3';
 import Slide4 from './components/content-slides/Slide4';
 import Slide5 from './components/content-slides/Slide5';
+import Slide6 from './components/content-slides/Slide6';
 
 export default {
   data() {
@@ -43,6 +45,7 @@ export default {
     Slide3,
     Slide4,
     Slide5,
+    Slide6,
   }
 };
 </script>

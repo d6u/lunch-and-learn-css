@@ -9,9 +9,3 @@
 <script>
 export default {};
 </script>
-
-<style lang="scss" scoped>
-.align-right {
-  text-align: right;
-}
-</style>
